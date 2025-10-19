@@ -25,6 +25,10 @@ while(user_coin >0):
         try:
             user_num = int(input("숫자입력: "))
 
+            if(user_num > 100):
+                print("100이하 숫자만 입력해주세요~")
+                continue
+
             if updownGame(com_num,user_num):
                 print("정답 맞추셨습니다.")
                 break
